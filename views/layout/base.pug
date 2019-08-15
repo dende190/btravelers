@@ -1,8 +1,54 @@
-html
+doctype html
+html.no-js(lang="zxx")
 	head
+		meta(charset='utf-8')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		block title
-
+		meta(name="description" content="BTravelers")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		block styles
+			// Styles.css
+			link(rel='stylesheet', href='/static/css/styles.css')
+			// Bootstrap.css
+			link(rel='stylesheet', href='/static/css/bootstrap.min.css')
+			// Font-Awesome
+			link(rel='stylesheet', href='/static/css/fontawesome.min.css')
+		block scriptsHead
+			// Bootstrap.js
+			script(src="/static/js/jquery-3.4.1.min.js")
+			script(src="https://use.fontawesome.com/04379bf52d.js")
+			
 	body
-		h1 Prueba
+		section#header
+			div#containerHeader
+				div.d-flex.alignCenterItems
+					div#logo
+						a(href='#')
+							h3.m-0 BTravelers
+					div#search
+						input#searchInput(type='text' placeholder='Que lugar quieres explorar...')
+				div.d-flex.justify-content-end.alignCenterItems#containerCenterHeader
+					div#travelNow.d-flex.marginRightOptionsHeader
+						a(href='#')
+							h5.m-0 
+								| Viaja Ya
+					div#travelGuided.d-flex.marginRightOptionsHeader
+						a(href='#')
+							h5.m-0 
+								| Viaje Guiado
+					div#notifications.d-flex
+						i.fa.fa-bell
+				div#user.d-flex.alignCenterItems.justify-content-center
+					a(href='#')
+						div#buttonsLogin
+							button#login.btn.btn-secundary Login
+							button#signup.btn.btn-secundary Sign Up
+
 		block content
 
+
+		block scripts
+			
+			script(src="/static/js/bootstrap.min.js")
+			script(src="/static/js/popper.min.js")
+			script(src="/static/js/tooltip.min.js")

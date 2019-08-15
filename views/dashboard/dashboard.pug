@@ -3,5 +3,26 @@ extends ../layout/base.pug
 block title
 	title BTravelers
 
+block append styles
+	link(rel='stylesheet', href='/static/css/jquery-jvectormap-2.0.3.css')
+
+block append scriptsHead
+	script(src="/static/js/jquery-jvectormap-2.0.3.min.js")
+	script(src="/static/js/jquery-jvectormap-world-mill-en.js")
+
 block content
-	p prueba 
+	div#world-map
+	script.
+		$(function(){
+			$('#world-map').vectorMap({
+				map: 'world_mill_en',
+				backgroundColor:  "#FFFFFF",
+				regionStyle: {
+					initial: {
+						fill: '#7b797a' // this adds color too all regions
+					}
+				}
+			});
+		});
+
+	

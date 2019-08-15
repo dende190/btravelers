@@ -1,0 +1,61 @@
+body{
+	color: #7b797a !important;
+}
+a{
+	color: #7b797a !important;
+}
+a:hover{
+	color: #333233 !important;
+	text-decoration: none !important;
+}
+
+/*EDIT BOOTSTRAP STYLES*/
+
+.btn-secundary{
+	color: #333233 !important;
+	background-color: #f1f1f1 !important;
+	border: 1px solid black !important;
+    width: 125px !important;
+}
+
+/**/
+
+#header{
+	background: #bab8b9;
+	height: 43.16px;
+	box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.75);
+}
+#containerHeader{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	height: 43.16px;
+}
+#containerCenterHeader{
+	padding-right: 50px;
+    border-right: 1px solid black;
+}
+.alignCenterItems{
+	align-items: center;
+}
+#logo{
+	margin-left: 100px;
+	margin-right: 16px;
+}
+#searchInput{
+	width: 270px;
+	height: 22px;
+    border: 1px solid black;
+    padding-left: 10px;
+    font-size: 13px;
+}
+.marginRightOptionsHeader{
+	margin-right: 80px;
+}
+#signup{
+	margin-right: 111px;
+}
+#world-map{
+	margin-top: 30px;
+	background-color: none;
+	height: 90vh;
+}
